@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_item_aulas"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_carro"
+            android:title="@string/nav_drawer_label_aulas" />
+
+        <item
+            android:id="@+id/nav_item_agendamentos"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_carro"
+            android:title="@string/nav_drawer_label_agendamentos" />
+
+        <item
+            android:id="@+id/nav_item_noticias"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_carro"
+            android:title="@string/nav_drawer_label_noticias" />
+
+        <item
+            android:id="@+id/nav_item_outros_cursos"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_carro"
+            android:title="@string/nav_drawer_label_outros_cursos" />
+        <item
+            android:id="@+id/nav_item_mapa"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_carro"
+            android:title="@string/nav_drawer_label_mapa" />
+        <!-- WebView com informações sobre o livro -->
+        <item
+            android:id="@+id/nav_item_site_livro"
+            android:icon="@drawable/ic_drawer_site_livro"
+            android:title="@string/site_do_livro" />
+        <!-- Tela de configurações -->
+        <item
+            android:id="@+id/nav_item_settings"
+            android:icon="@drawable/ic_drawer_settings"
+            android:title="@string/configuracoes" />
+    </group>
+</menu>

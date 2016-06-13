@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetalheActivity"
+    android:orientation="vertical">
+   <!--
+    <fragment
+        android:id="@+id/frag_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="br.com.thdev.unimap.fragments.HeaderCursoFragment"
+        />
+    -->
+    <include layout="@layout/include_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/relative_detail_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/textview_detail_disciplina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disciplina: Desenvolvimento de Sistemas II"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textview_detail_professor"
+                android:layout_below="@id/textview_detail_disciplina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Professor: Luis Claudiano"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/textview_detail_creditos"
+                android:layout_below="@id/textview_detail_disciplina"
+                android:layout_toRightOf="@id/textview_detail_professor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Créditos: 4"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/textview_detail_where"
+                android:layout_below="@id/textview_detail_professor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Bloco: 12 | Sala: 02 (Laboratório)"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/textview_detail_time_one"
+                android:layout_below="@id/textview_detail_where"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Horário: 19:20 às 20:40 / 21:00 às 22:20"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/textview_detail_test_one"
+                android:layout_below="@id/textview_detail_time_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Prova: Teórica / Dia 27 de maio"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textview_detail_test_dt_one"
+                android:layout_below="@id/textview_detail_test_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conteúdo: Análise de boas praticas de programação e identação."
+                android:textSize="16dp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textview_detail_test_two"
+                android:layout_below="@id/textview_detail_test_dt_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Prova: Prática / Dia 17 de abril"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textview_detail_test_dt_two"
+                android:layout_below="@id/textview_detail_test_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conteúdo: Criação de formulário Master x Detail + Relatórios gerenciais usando FastReport"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/textview_detail_obj"
+                android:layout_below="@id/textview_detail_test_dt_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Objetivos da Disciplina: Desenvolver a habilidade de construção de sistemas usando linguagem Delphi orientado a nada, só aprendemos via GOHorse mesmo."
+                android:textSize="16dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

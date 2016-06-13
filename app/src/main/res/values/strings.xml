@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Unimep</string>
+
+    <!-- A -->
+    <string name="action_about">Sobre</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="about_dialog_title">Livro Android</string>
+
+    <!-- C -->
+    <string name="configuracoes">Configurações</string>
+
+    <!-- D -->
+    <string name="descricao">Descrição</string>
+
+    <!-- E -->
+    <string name="error_conexao_indisponivel">Conexão indisponível. Verifique seu Wi-Fi ou 3G.</string>
+
+    <!-- L -->
+    <string name="latitudeLongitude">Lat / Lng</string>
+
+    <!-- M -->
+    <string name="mapa">Mapa</string>
+
+    <!-- N -->
+    <string name="nav_drawer_username">Thiago </string>
+    <string name="nav_drawer_email">tprocha@unimep.br</string>
+    <string name="nome">Nome</string>
+
+    <!-- O -->
+    <string name="ok">OK</string>
+
+    <!-- S -->
+    <string name="sobre">Sobre</string>
+    <string name="site_do_livro">Site do Livro</string>
+
+    <!-- V -->
+    <string name="vazio" />
+    <string name="video">Vídeo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_drawer_label_aulas">Aulas</string>
+    <string name="nav_drawer_label_agendamentos">Agendamentos</string>
+    <string name="nav_drawer_label_noticias">Notícias</string>
+    <string name="nav_drawer_label_outros_cursos">Outros Cursos</string>
+    <string name="nav_drawer_label_mapa">Mapa</string>
+    <string name="agendamento_titulo">Agendamento de Coisas</string>
+</resources>
