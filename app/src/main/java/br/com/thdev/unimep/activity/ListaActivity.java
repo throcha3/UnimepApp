@@ -26,10 +26,6 @@ public class ListaActivity extends BaseActivity {
             "Seg - Luis Claudiano", "Ter - Monan", "Qua - José Carlos Libardi", "Qui - Monan",
             "Sex - Luis Claudiano", "Sab - Rafael"
     };
-//    int[] img = new int[]{
-//            R.drawable.star1, R.drawable.star2, R.drawable.star3, R.drawable.star4,
-//            R.drawable.star5, R.drawable.star6, R.drawable.star7, R.drawable.star8
-//    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +33,7 @@ public class ListaActivity extends BaseActivity {
         setContentView(R.layout.activity_lista);
 
         setUpToolbar();
-        //setupNavDrawer();
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         lvDetail = (ListView) findViewById(R.id.aulas_list);
         // insert data into the list before setting the adapter

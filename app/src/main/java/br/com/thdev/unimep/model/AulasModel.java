@@ -1,7 +1,7 @@
 package br.com.thdev.unimep.model;
 
 /**
- * Created by thiag on 02/05/2016.
+ * Created by thiag on 18/04/2016.
  */
 public class AulasModel {
     String disciplina;

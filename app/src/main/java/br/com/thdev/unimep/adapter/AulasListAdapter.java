@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -67,12 +66,10 @@ public class AulasListAdapter extends BaseAdapter {
 
     private class MyViewHolder {
         TextView tvTitle, tvDesc;
-        ImageView ivIcon;
 
         public MyViewHolder(View item) {
             tvTitle = (TextView) item.findViewById(R.id.textview_disciplina);
             tvDesc = (TextView) item.findViewById(R.id.textview_professor);
-            //ivIcon = (ImageView) item.findViewById(R.id.ivIcon);
         }
     }
 }

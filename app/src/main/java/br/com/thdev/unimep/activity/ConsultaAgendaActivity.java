@@ -7,7 +7,7 @@ import android.widget.ListView;
 
 import br.com.thdev.unimep.R;
 import br.com.thdev.unimep.adapter.AgendaCursorAdapter;
-import br.com.thdev.unimep.database.AgendaDB;
+import br.com.thdev.unimep.database.Helper.AgendaHelper;
 
 public class ConsultaAgendaActivity extends AppCompatActivity {
 
@@ -16,7 +16,7 @@ public class ConsultaAgendaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consulta_agenda);
 
-        AgendaDB crud = new AgendaDB(getBaseContext());
+        AgendaHelper crud = new AgendaHelper(getBaseContext());
         final Cursor cursor = crud.getData();
 
         ListView listView = (ListView) findViewById(R.id.list_view_consulta);

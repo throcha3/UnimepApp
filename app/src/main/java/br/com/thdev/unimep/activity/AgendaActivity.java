@@ -7,8 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import br.com.thdev.unimep.R;
-import br.com.thdev.unimep.database.AgendaDB;
-import br.com.thdev.unimep.model.AgendaModel;
+import br.com.thdev.unimep.database.Helper.AgendaHelper;
+import br.com.thdev.unimep.model.Agenda;
 
 public class AgendaActivity extends BaseActivity {
 
@@ -37,11 +37,11 @@ public class AgendaActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 Log.d("BROCOLIS", "dentro do onclick..");
-                AgendaDB banco = new AgendaDB(getBaseContext());
-                AgendaModel agenda = new AgendaModel();
+                AgendaHelper banco = new AgendaHelper(getBaseContext());
+                Agenda agenda = new Agenda();
                 //agenda.setId_disciplina(mEdtIDDisciplina.getText());
-                agenda.setDescricao(String.valueOf(mEdtDescricao.getText()));
-                agenda.setTipo(String.valueOf(mEdtTipo.getText()));
+                agenda.descricao = (String.valueOf(mEdtDescricao.getText()));
+                agenda.tipo = (String.valueOf(mEdtTipo.getText()));
 
                 banco.save(agenda);
                 toast("salvou");

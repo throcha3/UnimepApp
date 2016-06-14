@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import br.com.thdev.unimep.R;
-import br.com.thdev.unimep.database.AgendaDB;
+import br.com.thdev.unimep.database.Table.AgendaTable;
 
 /**
  * Created by thiag on 12/06/2016.
@@ -30,9 +30,9 @@ public class AgendaCursorAdapter extends CursorAdapter {
         TextView txtDescricao = (TextView) view.findViewById(R.id.txt_desc);
         TextView txtTipo = (TextView) view.findViewById(R.id.txt_tipo);
 
-        int id = cursor.getInt(cursor.getColumnIndexOrThrow(AgendaDB.ID));
-        String descricao = cursor.getString(cursor.getColumnIndexOrThrow(AgendaDB.DESCRICAO));
-        String tipo = cursor.getString(cursor.getColumnIndexOrThrow(AgendaDB.TIPO));
+        int id = cursor.getInt(cursor.getColumnIndexOrThrow(AgendaTable.ID));
+        String descricao = cursor.getString(cursor.getColumnIndexOrThrow(AgendaTable.DESCRICAO));
+        String tipo = cursor.getString(cursor.getColumnIndexOrThrow(AgendaTable.TIPO));
 
 
         txtId.setText(String.valueOf(id));
