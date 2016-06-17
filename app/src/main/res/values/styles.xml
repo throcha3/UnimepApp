@@ -17,6 +17,11 @@
     <style name="AppTheme.NavDrawer" parent="BaseAppTheme" />
     <!-- Temas para a Toolbar, ver include_toolbar.xml -->
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NavDrawer.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NavDrawer.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

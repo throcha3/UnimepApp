@@ -1,4 +1,4 @@
-package br.com.thdev.unimep.fragment;
+package br.com.thdev.unimep.ui.fragment;
 
 import android.content.Context;
 import android.net.Uri;

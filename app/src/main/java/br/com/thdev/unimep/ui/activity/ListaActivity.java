@@ -1,4 +1,4 @@
-package br.com.thdev.unimep.activity;
+package br.com.thdev.unimep.ui.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,12 +10,12 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import br.com.thdev.unimep.R;
-import br.com.thdev.unimep.adapter.AulasListAdapter;
+import br.com.thdev.unimep.ui.adapter.AulasListAdapter;
 import br.com.thdev.unimep.model.AulasModel;
 
 public class ListaActivity extends BaseActivity {
-    ListView lvDetail;
-    Context context = ListaActivity.this;
+    ListView mListView;
+    Context mContext = ListaActivity.this;
     ArrayList myList = new ArrayList();
 
     String[] title = new String[]{
@@ -35,12 +35,12 @@ public class ListaActivity extends BaseActivity {
         setUpToolbar();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        lvDetail = (ListView) findViewById(R.id.aulas_list);
+        mListView = (ListView) findViewById(R.id.aulas_list);
         // insert data into the list before setting the adapter
         // otherwise it will generate NullPointerException  - Obviously
         getDataInList();
-        lvDetail.setAdapter(new AulasListAdapter(context, myList));
-        lvDetail.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        mListView.setAdapter(new AulasListAdapter(mContext, myList));
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //The position where the list item is clicked is obtained from the
@@ -70,7 +70,6 @@ public class ListaActivity extends BaseActivity {
             AulasModel ld = new AulasModel();
             ld.setDisciplina(title[i]);
             ld.setProfessor(desc[i]);
-            //ld.setImgResId(img[i]);
             // Add this object into the ArrayList myList
             myList.add(ld);
         }

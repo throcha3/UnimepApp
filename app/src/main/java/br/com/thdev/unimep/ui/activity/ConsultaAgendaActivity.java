@@ -1,20 +1,21 @@
-package br.com.thdev.unimep.activity;
+package br.com.thdev.unimep.ui.activity;
 
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import br.com.thdev.unimep.R;
-import br.com.thdev.unimep.adapter.AgendaCursorAdapter;
+import br.com.thdev.unimep.ui.adapter.AgendaCursorAdapter;
 import br.com.thdev.unimep.database.Helper.AgendaHelper;
 
-public class ConsultaAgendaActivity extends AppCompatActivity {
+public class ConsultaAgendaActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consulta_agenda);
+
+        setUpToolbar();
 
         AgendaHelper crud = new AgendaHelper(getBaseContext());
         final Cursor cursor = crud.getData();

@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.DetalheActivity"
+    tools:context=".ui.activity.DetalheActivity"
     android:orientation="vertical">
    <!--
     <fragment
         android:id="@+id/frag_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        class="br.com.thdev.unimap.fragments.HeaderCursoFragment"
+        class="br.com.thdev.unimep.fragments.HeaderCursoFragment"
         />
     -->
     <include layout="@layout/include_toolbar"/>
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="Objetivos da Disciplina: Desenvolver a habilidade de construção de sistemas usando linguagem Delphi orientado a nada, só aprendemos via GOHorse mesmo."
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
         </RelativeLayout>
     </ScrollView>
 </LinearLayout>

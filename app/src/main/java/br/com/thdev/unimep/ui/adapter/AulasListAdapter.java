@@ -1,4 +1,4 @@
-package br.com.thdev.unimep.adapter;
+package br.com.thdev.unimep.ui.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

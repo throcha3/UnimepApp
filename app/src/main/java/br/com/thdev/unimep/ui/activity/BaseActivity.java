@@ -1,4 +1,4 @@
-package br.com.thdev.unimep.activity;
+package br.com.thdev.unimep.ui.activity;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -78,12 +78,14 @@ public class BaseActivity extends livroandroid.lib.activity.BaseActivity {
                 startActivity(intent);
                 break;
             case R.id.nav_item_noticias:
-                toast("Clicou em noticias");
+                toast("Clicou em consulta da agenda");
                 intent = new Intent(getApplicationContext(), ConsultaAgendaActivity.class);
                 startActivity(intent);
                 break;
             case R.id.nav_item_outros_cursos:
-                toast("Clicou em outros cursos");
+                toast("Clicou em consulta de cursos");
+                intent = new Intent(getApplicationContext(), ConsCursoActivity.class);
+                startActivity(intent);
                 break;
             case R.id.nav_item_site_livro:
                 snack(drawerLayout, "Clicou em site do livro");

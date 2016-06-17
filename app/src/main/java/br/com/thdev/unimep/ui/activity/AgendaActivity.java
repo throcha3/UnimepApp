@@ -1,4 +1,4 @@
-package br.com.thdev.unimep.activity;
+package br.com.thdev.unimep.ui.activity;
 
 import android.os.Bundle;
 import android.util.Log;

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.thdev.unimep.activity.AgendaActivity"
+    tools:context=".ui.activity.AgendaActivity"
     android:orientation="vertical">
 
     <include layout="@layout/include_toolbar"/>
@@ -44,7 +44,8 @@
             android:hint="deadline"/>
         <EditText
             android:id="@+id/edt_descricao"
-
+            android:lines="5"
+            android:maxLines="5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Descricao"/>

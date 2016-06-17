@@ -22,11 +22,11 @@ public class AgendaHelper {
         mDatabaseHelper = new DatabaseHelper(mContext);
     }
 
-    //Metodo para inserir os dados no sqlite da lista criada com o json
-    public void insertFromSeries(Agendas agendas){
+    //This method insert json's data to local sqlite database
+    public void insertFromJson(Agendas agendas){
         SQLiteDatabase db = mDatabaseHelper.getWritableDatabase();
 
-        //Repeticao para inserir os dados da lista no sqlite
+        //Inserting data in sqlite..
         for(Agenda agenda : agendas.agendas){
             ContentValues values = new ContentValues();
 
@@ -43,7 +43,6 @@ public class AgendaHelper {
     public Cursor getData(){
         SQLiteDatabase db = mDatabaseHelper.getWritableDatabase();
         // Query for items from the database and get a cursor back
-        //String qry = "SELECT * FROM " + SerieTable.TABLE_NAME;
         Cursor cursor = db.rawQuery("SELECT  * FROM "+AgendaTable.TABELA, null);
 
         return cursor;

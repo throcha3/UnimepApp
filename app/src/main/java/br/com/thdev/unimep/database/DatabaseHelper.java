@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import br.com.thdev.unimep.database.Table.AgendaTable;
+import br.com.thdev.unimep.database.Table.CursoTable;
 
 /**
  * Created by thiag on 13/06/2016.
@@ -22,11 +23,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(AgendaTable.SQL_CREATE);
+        db.execSQL(CursoTable.SQL_CREATE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(AgendaTable.SQL_DROP_TABLE);
+        db.execSQL(CursoTable.SQL_DROP_TABLE);
         onCreate(db);
     }
 }
