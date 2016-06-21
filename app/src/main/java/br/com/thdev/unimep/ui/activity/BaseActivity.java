@@ -79,10 +79,10 @@ public class BaseActivity extends livroandroid.lib.activity.BaseActivity {
                 break;
             case R.id.nav_item_noticias:
                 toast("Clicou em consulta da agenda");
-                intent = new Intent(getApplicationContext(), ConsultaAgendaActivity.class);
+                intent = new Intent(getApplicationContext(), ConsAgendaActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.nav_item_outros_cursos:
+            case R.id.nav_item_cursos:
                 toast("Clicou em consulta de cursos");
                 intent = new Intent(getApplicationContext(), ConsCursoActivity.class);
                 startActivity(intent);

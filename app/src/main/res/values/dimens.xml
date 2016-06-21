@@ -21,4 +21,6 @@
     <dimen name="list_margin_left">16dp</dimen>
 
     <dimen name="list_agenda_txt_size">15sp</dimen>
+
+    <dimen name="detail_txt_size">16sp</dimen>
 </resources>

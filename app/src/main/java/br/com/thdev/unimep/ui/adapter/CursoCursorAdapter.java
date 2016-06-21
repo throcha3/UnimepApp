@@ -21,23 +21,25 @@ public class CursoCursorAdapter extends CursorAdapter {
 
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent) {
-        return LayoutInflater.from(context).inflate(R.layout.custom_list_agenda, parent, false);
+        return LayoutInflater.from(context).inflate(R.layout.custom_list_cursos, parent, false);
     }
 
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
-        TextView txtId = (TextView) view.findViewById(R.id.txt_id);
-        TextView txtDescricao = (TextView) view.findViewById(R.id.txt_desc);
-        TextView txtTipo = (TextView) view.findViewById(R.id.txt_tipo);
-
-        int id = cursor.getInt(cursor.getColumnIndexOrThrow(CursoTable.ID));
-        String descricao = cursor.getString(cursor.getColumnIndexOrThrow(CursoTable.NOME));
-        String tipo = cursor.getString(cursor.getColumnIndexOrThrow(CursoTable.QT_SEMESTRE));
+        TextView txtNomeCurso = (TextView) view.findViewById(R.id.txt_nome_curso);
+        TextView txtFaculdade = (TextView) view.findViewById(R.id.txt_facul);
+        TextView txtSemestres = (TextView) view.findViewById(R.id.txt_semestres);
 
 
-        txtId.setText(String.valueOf(id));
-        txtDescricao.setText(descricao);
-        txtTipo.setText(tipo);
+        String nomeCurso = cursor.getString(cursor.getColumnIndexOrThrow(CursoTable.NOME));
+        String faculdade = cursor.getString(cursor.getColumnIndexOrThrow(CursoTable.FACULDADE));
+        int semestres = cursor.getInt(cursor.getColumnIndexOrThrow(CursoTable.QT_SEMESTRE));
+
+        String aux = "Semestres: " + String.valueOf(semestres);
+
+        txtSemestres.setText(aux);
+        txtNomeCurso.setText(nomeCurso);
+        txtFaculdade.setText(faculdade);
 
     }
 }

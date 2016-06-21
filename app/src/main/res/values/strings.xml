@@ -43,8 +43,10 @@
     <string name="nav_drawer_label_aulas">Aulas</string>
     <string name="nav_drawer_label_agendamentos">Agendamentos</string>
     <string name="nav_drawer_label_noticias">Notícias</string>
-    <string name="nav_drawer_label_outros_cursos">Outros Cursos</string>
+    <string name="nav_drawer_label_cursos">Cursos</string>
     <string name="nav_drawer_label_mapa">Mapa</string>
+
     <string name="agendamento_titulo">Agendamento de Coisas</string>
     <string name="title_activity_consulta_cursos">ConsultaCursosActivity</string>
+    <string name="button_label_saiba_mais">Saiba Mais</string>
 </resources>

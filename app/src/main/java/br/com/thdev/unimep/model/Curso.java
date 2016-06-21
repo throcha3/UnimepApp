@@ -14,9 +14,11 @@ public class Curso {
     public int qtSemestre;
 
     public String curso;
-
-    public String profissão;
+    @SerializedName("profissao")
+    public String profissao;
 
     public int campus;
+
+    public String faculdade;
 
 }

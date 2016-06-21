@@ -51,7 +51,7 @@ public class ListaActivity extends BaseActivity {
                 //String itemValue = (String) lvDetail.getItemAtPosition(position);
 
                 //In order to start displaying new activity we need an intent
-                Intent intent = new Intent(getApplicationContext(), DetalheActivity.class);
+                Intent intent = new Intent(getApplicationContext(), DtDisciplinaActivity.class);
 
                 //Putting the Id of image as an extra in intent
                 //intent.putExtra("flag", title[position]);

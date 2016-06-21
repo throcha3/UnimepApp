@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.DtCursoActivity">
+
+    <include layout="@layout/include_toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+
+        android:id="@+id/textview_dt_c_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SISTEMAS DE INFORMAÇÃO"
+        android:textAlignment="center"
+        android:background="#E9E9E9"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <ScrollView
+        android:layout_below="@id/textview_dt_c_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/relative_dt_c_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/textview_dt_c_faculdade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculdade:."
+                android:textSize="@dimen/detail_txt_size" />
+            <TextView
+                android:id="@+id/textview_dt_c_label_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Como é a profissão:"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textview_dt_c_profissao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aqui deveria aparecer uma descrição da profissão, porém não foi possível no momento. Peço que o sr. aguarde uma nova atualização para correção desse bug. :'("
+                android:textSize="@dimen/detail_txt_size"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textview_dt_c_label_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Como é o curso:"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textview_dt_c_curso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conteúdo: curso 1234."
+                android:textSize="@dimen/detail_txt_size"
+                android:textStyle="italic"/>
+            <TextView
+                android:id="@+id/textview_dt_c_semestre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semestres:."
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/detail_txt_size"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textview_dt_c_campus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campus:."
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/detail_txt_size"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_dt_c_saiba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_label_saiba_mais"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:shadowRadius="29"
+        android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

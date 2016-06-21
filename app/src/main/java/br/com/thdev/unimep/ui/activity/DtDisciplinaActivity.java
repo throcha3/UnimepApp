@@ -4,14 +4,13 @@ import android.os.Bundle;
 
 import br.com.thdev.unimep.R;
 
-public class DetalheActivity extends BaseActivity {
+public class DtDisciplinaActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalhe);
+        setContentView(R.layout.activity_dt_disciplina);
         setUpToolbar();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        //Here I have to get the intent extra to show info
     }
 }

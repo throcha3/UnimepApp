@@ -21,13 +21,18 @@
             android:name=".ui.activity.ListaActivity"
             android:parentActivityName=".ui.activity.MainActivity" />
         <activity
-            android:name=".ui.activity.DetalheActivity"
+            android:name=".ui.activity.DtDisciplinaActivity"
             android:parentActivityName=".ui.activity.ListaActivity" />
         <activity
             android:name=".ui.activity.AgendaActivity"
             android:parentActivityName=".ui.activity.MainActivity" />
-        <activity android:name=".ui.activity.ConsultaAgendaActivity" />
-        <activity android:name=".ui.activity.ConsCursoActivity"></activity>
+        <activity android:name=".ui.activity.ConsAgendaActivity" />
+
+        <activity android:name=".ui.activity.ConsCursoActivity"
+            android:parentActivityName=".ui.activity.MainActivity"/>
+
+        <activity android:name=".ui.activity.DtCursoActivity"
+            android:parentActivityName=".ui.activity.ConsCursoActivity"/>
     </application>
 
 </manifest>

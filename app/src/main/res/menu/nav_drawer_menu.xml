@@ -21,10 +21,10 @@
             android:title="@string/nav_drawer_label_noticias" />
 
         <item
-            android:id="@+id/nav_item_outros_cursos"
+            android:id="@+id/nav_item_cursos"
             android:checked="true"
             android:icon="@drawable/ic_drawer_carro"
-            android:title="@string/nav_drawer_label_outros_cursos" />
+            android:title="@string/nav_drawer_label_cursos" />
         <item
             android:id="@+id/nav_item_mapa"
             android:checked="true"

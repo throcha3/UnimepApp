@@ -6,33 +6,38 @@
       "qt_semestre": 8,
       "curso": "Durante a graduação, o aluno aprenderá a realizar o planejamento, construção e administração de sistemas de informação baseados em computadores.",
       "profissao": "Em uma sociedade cada vez mais digital, o Analista de Sistemas é essencial: toda empresa, de pequeno a grande porte, precisa desse profissional. Usando raciocínio lógico e criatividade, ele desenvolve programas e padroniza processos para que a experiência do usuário e a eficiência dos sistemas sejam cada vez melhores.",
-      "campus" : 1
+      "campus" : 1,
+      "faculdade" : "Faculdade de Comunicação e Informática"
     },
     {
       "nome": "Psicologia",
       "qt_semestre": 11,
       "curso": "Durante a graduação em Psicologia o aluno terá contato com teoria e prática dessa ciência e profissão, aprendendo a aplicar seu conhecimento sobre os fenômenos psíquicos e o comportamento do ser humano nos mais diversos contextos, desde o consultório clínico até as relações humanas em grandes empresas.",
       "profissao": "A psicologia é uma das áreas de atuação que mais crescem atualmente! O profissional em Psicologia diagnostica, trata e previne doenças mentais, distúrbios emocionais e de personalidade. Seus conhecimentos são requisitados nas mais diversas organizações, pois trabalham as relações humanas, conectando indivíduo e sociedade.",
-      "campus" : 1
+      "campus" : 1,
+      "faculdade" : "Faculdade de Ciencias Humanas"
     },
     {
       "nome": "Direito",
       "qt_semestre": 10,
       "curso": "Os primeiros anos do curso trazem o conteúdo fundamental da área, desde o aperfeiçoamento do português formal, sociologia, economia e até as disciplinas específicas, como direito civil, penal, constitucional, etc. Nos anos seguintes, o aluno poderá direcionar sua carreira por meio do estágio e da monografia de conclusão do curso.",
       "profissao": "O direito é uma das ferramentas de mudança mais poderosas do mundo. Se você se interessa por ética, sabe articular e gosta de debater, essa pode ser sua carreira ideal. O campo de trabalho é um dos mais amplos que existem, permitindo que o bacharel siga a advocacia, o que exige a certificação da OAB, ou a carreira jurídica, sendo um juiz, procurador, delegado ou defensor público.",
-      "campus" : 1
+      "campus" : 1,
+      "faculdade" : "Faculdade de Comunicação e Informática"
     },{
       "nome": "Letras - Inglês - (Tradução e Interpretação)",
       "qt_semestre": 8,
       "curso": "Além de oferecer um conteúdo teórico consistente e atualizado, o curso abre inúmeras de desenvolvimento cultural e profissional: convênios com universidades nos Estados Unidos e no México, vagas exclusivas de estágio em empresas como Caterpillar e Escola de Agronomia Luís de Queiroz (Esalq).",
       "profissao": "A internacionalização dos negócios é uma realidade consolidada, que abre espaços para o profissional qualificado para a função de tradutor e intérprete. Formado pela Unimep, você terá todas as condições para isso, seja redigindo e traduzindo documentos e textos, seja atuando como intérprete para visitantes estrangeiros.",
-      "campus" : 1
+      "campus" : 1,
+      "faculdade" : "Faculdade de Ciencias Humanas"
     },{
       "nome": "Engenharia Química",
       "qt_semestre": 10,
       "curso": "O Curso de Graduação em Engenharia Química da Universidade Metodista de Piracicaba iniciou suas atividades com o 1º vestibular em janeiro de 1994, oferecido pelo Centro de Tecnologia (CT) no campus de Santa Bárbara d’Oeste.",
       "profissao": "A indústria química depende de profissionais especializados, e tem dificuldade para encontrá-los. Isso abre um imenso campo de oportunidades para quem faz engenharia química, principalmente num pólo industrial vigoroso como o nosso.",
-      "campus" : 2
+      "campus" : 2,
+      "faculdade" : "Faculdade de Engenharia"
     }
   ]
 }

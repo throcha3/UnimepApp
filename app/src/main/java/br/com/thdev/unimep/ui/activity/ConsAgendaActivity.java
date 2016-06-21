@@ -8,7 +8,7 @@ import br.com.thdev.unimep.R;
 import br.com.thdev.unimep.ui.adapter.AgendaCursorAdapter;
 import br.com.thdev.unimep.database.Helper.AgendaHelper;
 
-public class ConsultaAgendaActivity extends BaseActivity {
+public class ConsAgendaActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +16,7 @@ public class ConsultaAgendaActivity extends BaseActivity {
         setContentView(R.layout.activity_consulta_agenda);
 
         setUpToolbar();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         AgendaHelper crud = new AgendaHelper(getBaseContext());
         final Cursor cursor = crud.getData();
@@ -32,7 +33,7 @@ public class ConsultaAgendaActivity extends BaseActivity {
                 String codigo;
                 cursor.moveToPosition(position);
                 codigo = cursor.getString(cursor.getColumnIndexOrThrow(LivrosHelper.ID));
-                Intent intent = new Intent(ConsultaAgendaActivity.this, AlteraActivity.class);
+                Intent intent = new Intent(ConsAgendaActivity.this, AlteraActivity.class);
                 intent.putExtra("codigo", codigo);
                 startActivity(intent);
                 finish();
